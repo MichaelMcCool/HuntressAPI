@@ -9,9 +9,9 @@ Quick Start:
 
 import-module HuntressAPI
 
-Set-HuntressKey <key>
+Set-HuntressKey '\<key\>'
 
-Set-HuntressSecret <secret>
+Set-HuntressSecret '\<secret\>'
 
 
 Get-HuntressOrganiation
