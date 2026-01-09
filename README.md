@@ -15,7 +15,3 @@ Set-HuntressSecret '\<secret\>'
 
 
 Get-HuntressOrganiation
-
-
-
-Please note that there is a bug currently in the Huntress API when filtering the agent by platform when more than one page of results are present. The module uses a page size of 50, so this bug is expressed when over 50 results are in the query response. Filtering by 'darwin','windows', or 'linux' will only function properly when the results are 50 or fewer. This bug has been reported to Huntress.
