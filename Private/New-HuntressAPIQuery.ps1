@@ -40,7 +40,7 @@ function New-HuntressAPIQuery {
 
     # Perform query against API.
     write-verbose "Querying $URI"
-    $response = Invoke-WebRequest -Uri $URI -Method GET -headers $script:headers
+    $response = Invoke-WebRequest -Uri $URI -Method GET -headers $script:headers -UseBasicParsing
     switch ($response.StatusCode){
         200 {
             $response.content | ConvertFrom-Json
@@ -73,7 +73,7 @@ function New-HuntressAPIQuery {
             do{
                 start-sleep 10
                 $retries++
-                $response = Invoke-WebRequest -Uri $URI -Method GET -headers $script:headers
+                $response = Invoke-WebRequest -Uri $URI -Method GET -headers $script:headers -UseBasicParsing
                 if ($response.Statuscode -eq 200){
                     $retry=$false
                     $response.content | ConvertFrom-Json

@@ -1,4 +1,5 @@
 function Get-HuntressIncidentReport {
+    [CmdletBinding(DefaultParameterSetName='Global')]
     param (
         [Parameter(ParameterSetName="Individual")]
         [int]$incidentid,

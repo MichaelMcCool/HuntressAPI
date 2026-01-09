@@ -1,4 +1,5 @@
 function Get-HuntressRemediation {
+    [CmdletBinding(DefaultParameterSetName='Global')]
     param (
         [Parameter(Mandatory=$true)]
         [int]$IncidentReportId,

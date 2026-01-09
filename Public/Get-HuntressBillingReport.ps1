@@ -1,4 +1,5 @@
 function Get-HuntressBillingReport {
+    [CmdletBinding(DefaultParameterSetName='Global')]
     param (
         [Parameter(ParameterSetName="Individual")]
         [Parameter(Mandatory=$false)]

@@ -1,4 +1,5 @@
 function Get-HuntressAgent {
+    [CmdletBinding(DefaultParameterSetName='Global-Site')]
     param (
         [Parameter(ParameterSetName="Device")]
         [Parameter(Mandatory=$false)]
